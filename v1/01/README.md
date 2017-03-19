@@ -38,7 +38,7 @@ syt(p, q) {
 }
 ```
 
-3. Keskenään jaottomiksi tai suhteellisiksi alkuluvuiksi tai alkuluvuiksi toistensa suhteen, jos p:n ja q:n suurin yhteinen tekijä on 1. Sovella edellisen tehtävän algoritmia ja tee rekursiivinen funktio kjl(p, q), joka tutkii ovatko kaksi lukua keskenään jaottomia. Esimerkiksi 35 ja 18 ovat keskenään jaottomia lukuja.
+3. Keskenään jaottomiksi tai suhteellisiksi alkuluvuiksi tai alkuluvuiksi toistensa suhteen sanotaan kahta lukua p ja q, jos p:n ja q:n suurin yhteinen tekijä on 1. Sovella edellisen tehtävän algoritmia ja tee rekursiivinen funktio kjl(p, q), joka tutkii ovatko kaksi lukua keskenään jaottomia. Esimerkiksi 35 ja 18 ovat keskenään jaottomia lukuja.
 
 4. Kirjoita potenssiin korotus rekursiivisena funktiona. 
 
