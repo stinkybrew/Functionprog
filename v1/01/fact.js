@@ -7,3 +7,4 @@ function fact(n) {
   return n * fact(n - 1);
 }
 var tulos = fact(4);
+console.log(tulos);

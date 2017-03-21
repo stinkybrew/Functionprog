@@ -16,7 +16,7 @@ git clone https://github.com/erja/funpro.git
 Tämä kloonaa etärepositorin kansioon `funpro`, tiedostohallinnassa pitäisi näkyä normaalisti. Voidaksesi ajaa git-komentoja, sinun on
 oltava tässä `funpro` hakemistossa.
 ```
-cd pilvi/
+cd funpro/
 git status
 ```
 komento git status kertoo missä gitin haarassa olet ja mikä on tilanne tiedostojen suhteen.
