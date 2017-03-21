@@ -1,0 +1,36 @@
+'use strict'
+
+const offset = [1,2];
+const zoom = 2;
+
+const point = { x: 1, y: 1};
+
+const pipeline  = [   // 2D-muunnoksia
+    
+    function translate(p){
+        return { x: p.x + offset[0], y: p.y + offset[1] };
+    },
+
+    function scale(p){
+        return { x: p.x * zoom, y: p.y * zoom};
+    }
+];
+
+
+function muunnos(point){
+     for(let i=0; i<pipeline.length; i++){   
+        point = pipeline[i](point);
+    }
+    return point;
+}
+
+function muunnosTesti(){
+    
+    const uusiPoint = muunnos(point);
+    const uusiPoint2 = muunnos(uusiPoint);
+
+    //return " " + uusiPoint2.x + " " + uusiPoint2.y;
+
+}
+
+console.log(muunnosTesti());
