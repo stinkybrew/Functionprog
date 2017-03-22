@@ -13,7 +13,7 @@ const pipeline  = [   // 2D-muunnoksia
 
     function scale(p){
         return { x: p.x * zoom, y: p.y * zoom};
-    }
+    },
 ];
 
 
@@ -24,13 +24,6 @@ function muunnos(point){
     return point;
 }
 
-function muunnosTesti(){
-    
-    const uusiPoint = muunnos(point);
-    const uusiPoint2 = muunnos(uusiPoint);
 
-    //return " " + uusiPoint2.x + " " + uusiPoint2.y;
-
-}
-
-console.log(muunnosTesti());
+console.log(point);
+console.log(muunnos(point))
