@@ -26,4 +26,4 @@ function muunnos(point){
 
 
 console.log(point);
-console.log(muunnos(point))
+console.log(muunnos(point));

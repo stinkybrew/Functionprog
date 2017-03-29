@@ -16,6 +16,6 @@ kasvata(piste);
 
 console.log(piste);
 let piste2 = uusi_piste(piste);
-console.log(piste);
 console.log(piste2);
+console.log(piste);
     
