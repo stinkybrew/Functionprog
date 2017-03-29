@@ -12,7 +12,7 @@ function summa(taulukko, f){
 // Voidaan kutsua:
 
 console.log(summa([1,2,3]));
-console.log(summa([1,2,3], x => x*x));
+console.log(summa([1,2,3], x => x * x));
 
 
 // Muutetaan yksiparametriseksi:
@@ -39,4 +39,3 @@ console.log(nelioidenSummaaja([1,2,3]));
 
 const kuutioidenSummaaja = summaajaArrow(x => Math.pow(x,3));
 console.log(kuutioidenSummaaja([1,2,3]));
-
