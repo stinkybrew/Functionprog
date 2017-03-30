@@ -23,7 +23,7 @@ function laskePisteet(pituus, kPiste, lisapisteet){...}
 let pisteet = normaaliLahti(98);
 ```
 
-* Tarkennusvinkki: toteuta kaksiparametrinen funktio, joka saa parametreinaan mäen K-pisteen ja lisäpistemäärän (1,8 tai 2,0) ja joka palauttaa edelläkuvatunlaisen yksiparametrsien funktion.
+* Vinkki: toteuta kaksiparametrinen funktio, joka saa parametreinaan mäen K-pisteen ja lisäpistemäärän (1,8 tai 2,0) ja joka palauttaa edelläkuvatunlaisen yksiparametrisen funktion.
 
 2. Määrittele Auto-luokka, jolla on parametriton konstruktori ja kaksi ominaisuutta tankki ja matkamittari. Tankki sisältää polttoaineen määrän ja matkamittari ajetut kilometrit. 
 Suojaa matkamittari siten (WeakMap), että lukemaa ei pääse muuttamaan luokan ulkopuolelta käsin. 
