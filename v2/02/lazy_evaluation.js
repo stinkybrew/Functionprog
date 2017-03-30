@@ -8,11 +8,11 @@ let parittomienNeliot =
     .map(function(x){console.log(`map ${x}`); return x * x});
     
 //console.log(`0: ${parittomienNeliot.get(0)}`);        
-console.log(`1:  ${parittomienNeliot.get(1)}`);    
+//console.log(`1:  ${parittomienNeliot.get(1)}`);    
 //console.log(`2: ${parittomienNeliot.get(2)}`);     
     
     
-// Sama JavaScritin taulukolle:
+// Sama JavaScriptin taulukolle:
 
 console.log ('Taulukko:');
 
@@ -22,7 +22,7 @@ let parittomienNeliotTaulukko =
     .map(function(x){console.log(`map ${x}`); return x * x});
     
 //console.log(`0: ${parittomienNeliot.get(0)}`);        
-console.log(`1:  ${parittomienNeliotTaulukko[1]}`);    
+//console.log(`1:  ${parittomienNeliotTaulukko[1]}`);    
 //console.log(`2: ${parittomienNeliot.get(2)}`);     
 
 

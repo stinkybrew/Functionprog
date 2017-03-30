@@ -14,7 +14,7 @@ Ohjelmoi seuraavat tehtävät JavaScriptillä.
 Vie koodisi myös omaan git-repoosi, jonne olet antanut opettajille oikeudet (simosilander, )
 
 
-1. <b>Anonyymi funktio paluuarvona</b>: Kirjoita funktio, joka paluttaa arvonaan anonyymin funktion, jolla voidaan verrata kahta lukua keskenään. 
+1. <b>Anonyymi funktio paluuarvona</b>: Kirjoita funktio, joka palauttaa arvonaan anonyymin funktion, jolla voidaan verrata kahta lukua keskenään. 
 
     Paluuarvo  1: ensimmäinen on suurempi
 
