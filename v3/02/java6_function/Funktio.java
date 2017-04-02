@@ -11,7 +11,7 @@ import java.util.ArrayList;
     }
     @functionalInterface
     public interface ToIntFunction<T>
-        int apply(T t);
+        int applyAsInt(T t);
     }
 */
 
