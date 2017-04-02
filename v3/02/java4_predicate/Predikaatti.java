@@ -48,8 +48,8 @@ class Predikaatti{
         // Yhdistetyt predikaatit (and, or, negate. Tässä and + negate:)
         
         Predicate<String> yli5merkkia = (String s) -> s.length() > 5;
-        List<String> mAlkuisetJaYli5 = filtteri(nimet, yli5merkkia.negate().and((String s) -> s.startsWith("M")));
-        mAlkuisetJaYli5.forEach((s) -> System.out.println(s));
+        List<String> alle6jaMalkuiset = filtteri(nimet, yli5merkkia.negate().and((String s) -> s.startsWith("M")));
+        alle6jaMalkuiset.forEach((s) -> System.out.println(s));
         
     }
 

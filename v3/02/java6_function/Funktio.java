@@ -48,14 +48,14 @@ class Funktio{
         // andThen:
         
         Function<String, String> alkukirjaimet = (String s) -> s.substring(0,2);    
-        Function<String, Boolean> alussaS = (String s) -> s.startsWith("S");    
-        Function<String, Boolean> yhdistetty = alkukirjaimet.andThen(alussaS);
+        Function<String, Boolean> lopussaA = (String s) -> s.endsWith("a");    
+        Function<String, Boolean> yhdistetty = alkukirjaimet.andThen(lopussaA);
         List<Boolean> tulostaulu = mappaa(nimet, yhdistetty);
         tulostaulu.forEach(b -> System.out.println(b));       
         
         // compose: (sama tulos)
         
-        Function<String, Boolean> yhdistetty2 = alussaS.compose(alkukirjaimet);
+        Function<String, Boolean> yhdistetty2 = lopussaA.compose(alkukirjaimet);
         List<Boolean> tulostaulu2 = mappaa(nimet, yhdistetty2);
         tulostaulu2.forEach(b -> System.out.println(b));       
         
