@@ -1,5 +1,4 @@
 package menu;
-
 import java.util.stream.*;
 import java.util.*;
 import static menu.Dish.dishTags;
@@ -13,17 +12,17 @@ public class Reducing{
         int sum = numbers.stream().reduce(0, (a, b) -> a + b);
         System.out.println(sum);
 
-        int sum2 = numbers.stream().reduce(0, Integer::sum);
+        int sum2 = numbers.stream().reduce(0, (a,b) -> Integer.sum(a,b));
         System.out.println(sum2);
 
         int max = numbers.stream().reduce(0, (a, b) -> Integer.max(a, b));
         System.out.println(max);
 
-        Optional<Integer> min = numbers.stream().reduce(Integer::min);
-        min.ifPresent(System.out::println);
+        Optional<Integer> min = numbers.stream().reduce((s,i) -> Integer.min(s,i));
+        min.ifPresent(i -> System.out.println());
 
         int calories = menu.stream()
-                           .map(Dish::getCalories)
+                           .map(dish -> dish.getCalories())
                            .reduce(0, Integer::sum);
         System.out.println("Number of calories:" + calories);
     }

@@ -29,11 +29,11 @@ public class Summarizing {
 
     
     private static int calculateTotalCalories() {
-        return menu.stream().collect(summingInt(Dish::getCalories));
+        return menu.stream().collect(summingInt(dish -> dish.getCalories()));
     }
 
     private static Double calculateAverageCalories() {
-        return menu.stream().collect(averagingInt(Dish::getCalories));
+        return menu.stream().collect(averagingInt(dish -> dish.getCalories()));
     }
 
 }
