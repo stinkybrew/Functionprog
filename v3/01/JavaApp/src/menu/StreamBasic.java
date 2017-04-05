@@ -6,6 +6,7 @@ import java.util.stream.*;
 import static java.util.Comparator.comparing;
 import static java.util.stream.Collectors.toList;
 
+
 public class StreamBasic {
 
     public static void main(String...args){

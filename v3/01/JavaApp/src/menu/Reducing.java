@@ -1,9 +1,9 @@
 package menu;
-import lambdasinaction.chap4.*;
 
 import java.util.stream.*;
 import java.util.*;
-
+import static menu.Dish.dishTags;
+import static menu.Dish.menu;
 
 public class Reducing{
 
