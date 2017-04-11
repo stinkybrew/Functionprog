@@ -14,7 +14,7 @@ public class Peek {
         List<Integer> numbers = Arrays.asList(2, 3, 4, 5);
 		
 		numbers.stream()
-				.map(x -> x + 17)
+		.map(x -> x + 17)
                 .filter(x -> x % 2 == 0)
                 .limit(3)
                 .forEach(System.out::println);
