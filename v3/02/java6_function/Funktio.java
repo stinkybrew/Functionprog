@@ -6,11 +6,11 @@ import java.util.ArrayList;
 /* Tämä näkyviin ihan vaan helpottamaan koodin ymmärtämistä:
 
     @functionalInterface
-    public interface Function<T, R>
+    public interface Function<T, R>{
         R apply(T t);
     }
     @functionalInterface
-    public interface ToIntFunction<T>
+    public interface ToIntFunction<T>{
         int applyAsInt(T t);
     }
 */

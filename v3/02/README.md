@@ -21,10 +21,10 @@ Näytä,kuinka saat tulostetuksi pituspisteet 100-metrin hypystä Lahden normaal
 import java.util.function.DoubleUnaryOperator;
 
 public class Makihyppy {
-
+lein repl
     static DoubleUnaryOperator makePistelaskuri(double kPiste, double lisapisteet){
             return // puuttuva koodi
-    }
+    };
         
     public static void main(String[] args) {
 
