@@ -43,7 +43,7 @@ kanssa.
 ```
 Tämä luo seuraavan tiedostorakenteen.
 
-![](.img/leinproj.png)
+![](img/leinproj.png)
 
 
 9. Käynnistä tämän jälkeen repl (vaatii project.clj olemassaolon)
