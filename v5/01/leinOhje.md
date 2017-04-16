@@ -1,7 +1,7 @@
 
 # Työtilan päivittäminen Clojurea varten
 
-Voit lähteä liikkeelle siitä työtilasta Cloud9:ssä, missä olet työskennellyt Javscript-ohjelminen
+Voit lähteä liikkeelle siitä työtilasta Cloud9:ssä, missä olet työskennellyt Javascript-ohjelmien
 kanssa.
 
 1.  Downloadaa lein-skripti https://raw.githubusercontent.com/technomancy/leiningen/stable/bin/lein
@@ -43,12 +43,8 @@ kanssa.
 ```
 Tämä luo seuraavan tiedostorakenteen.
 
-```html
-<figure id="floating">
-<img src="img/leinproj.png" alt="Onions">
-    <figcaption>Default project structure</figcaption>
-</figure>
-```
+![](.img/leinproj.png)
+
 
 9. Käynnistä tämän jälkeen repl (vaatii project.clj olemassaolon)
 ```
