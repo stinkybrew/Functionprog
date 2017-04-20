@@ -73,7 +73,7 @@ Tämä luo seuraavan tiedostorakenteen.
 enikunen:~/workspace<oikeapaikka> $ lein compile
 ```
 
-11. Koko projektinvoi ajaa run-komennolla
+11. Koko projektin voi ajaa run-komennolla
 ```
 	enikunen:~/workspace<oikeapaikka> $ lein run
 	Hello, World!
