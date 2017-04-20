@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.function.*;
 import java.util.stream.Collector;
 import static java.util.stream.Collector.Characteristics.*;
@@ -23,7 +24,7 @@ public class OmaListaKollektori<T> implements Collector<T, List<T>, List<T>> {
 */
     @Override
     public Supplier<List<T>> supplier() {     // () -> T
-        return () -> new ArrayList<>();
+        return () -> new CopyOnWriteArrayList<>();
     }
 
 
@@ -49,7 +50,7 @@ public class OmaListaKollektori<T> implements Collector<T, List<T>, List<T>> {
 
     @Override
     public Set<Characteristics> characteristics() {
-        return Collections.unmodifiableSet(EnumSet.of(IDENTITY_FINISH));
+        return Collections.unmodifiableSet(EnumSet.of(IDENTITY_FINISH, CONCURRENT));
     }
 }
 

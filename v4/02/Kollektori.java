@@ -21,7 +21,7 @@ class Kollektori{
         omenat.add(o3);
         omenat.add(o4);
             
-        
+  /*      
         List<Omena> punaiset = 
                 omenat.stream()
                     .filter(o -> "punainen".equals(o.getVari()))
@@ -30,13 +30,14 @@ class Kollektori{
         punaiset.forEach(o -> System.out.println(o));
         // punaiset.forEach(System.out::println)
 
+
         List<Omena> vihreat = 
                 omenat.stream()
                     .filter(o -> "vihreä".equals(o.getVari()))
                     .collect(new OmaListaKollektori<>()); 
                 
         vihreat.forEach(o -> System.out.println(o));
-        
+*/      
   
         int cores = Runtime.getRuntime().availableProcessors();
         System.out.println("Cores: " + cores);
@@ -44,8 +45,8 @@ class Kollektori{
         long start = System.nanoTime();
        
         List<Double> l = DoubleStream.generate(Math::random)
-        //.parallel()
-        .limit(500000)
+        .parallel()
+        .limit(50000)
         .boxed()
         .collect(new OmaListaKollektori<>());  // ikioma kollektori
         //.collect(toList()); // Javan oma
@@ -55,5 +56,6 @@ class Kollektori{
         System.out.println(l.size() + " " + duration / 1000000);
       
     }     
+    
 }
 
