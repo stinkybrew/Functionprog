@@ -22,6 +22,7 @@ Viikon 6 torstain materiaalia.
 Laske huhtikuun osalta muun nesteen kuin veden kulutus, siis tuloksena on yksi luku.
 
 3. Säilytä edellisessä tehtävässä map-rakenne niin, että
+```
  (def food-journal
   [{:kk 4 :paiva 5 :muuneste 3.0}
    {:kk 4 :paiva 10 :muuneste 1.7}
