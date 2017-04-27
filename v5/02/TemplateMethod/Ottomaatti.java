@@ -21,7 +21,7 @@ public class Ottomaatti {
     public void toimi(){
                 
         new OnlinePankkiTemplateMethod().kasitteleAsiakas(
-                () -> "Tervetuloa!",
+                () -> "Welcome!",
                 () -> new Asiakas(),
                 (Asiakas a) -> {              
                         System.out.println("Anna tunnus");
@@ -31,7 +31,7 @@ public class Ottomaatti {
                         String sala = scan.nextLine();
                         return Tunnukset.getInstance().tarkista(a.getNimi(), sala);
                 },
-                (Asiakas a) -> a.getSaldo() > 100,
+                (Asiakas a) -> a.getSaldo() > -100,
                 (Asiakas a) -> a.setSaldo(a.getSaldo()-100),
                 (Asiakas a) -> System.out.println(
                         "Näkemiin " + a.toString() +

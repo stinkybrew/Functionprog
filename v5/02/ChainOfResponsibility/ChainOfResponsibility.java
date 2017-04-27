@@ -45,7 +45,7 @@ public class ChainOfResponsibility {
         
         Function<Pyynto, Pyynto> ketju = esimiesKasittelee.andThen(paallikkoKasittelee).andThen(johtajaKasittelee); 
         
-        Pyynto p = new Pyynto(1000, 90);
+        Pyynto p = new Pyynto(1000, 10);
         
         p = ketju.apply(p);
         

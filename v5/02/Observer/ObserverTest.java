@@ -22,27 +22,27 @@ public class ObserverTest {
     public static void main(String[] args) {
      
         Subject s1 = new Subject();
-        Subject s2 = new Subject();
+        //Subject s2 = new Subject();
                 
         List<Integer> list1 = new ArrayList<>(); 
         List<Integer> list2 = new ArrayList<>(); 
         
         s1.addObserver((Observable o, Object arg) -> {
-            if ((Integer)arg % 2 == 0) list1.add((Integer)arg);
+            /*if ((Integer)arg % 2 == 0) */list1.add((Integer)arg);
         });
         
-        s2.addObserver((Observable o, Object arg) -> {
+        s1.addObserver((Observable o, Object arg) -> {
             if ((Integer)arg % 2 != 0) list2.add((Integer)arg);
         });
         
         Thread t1 = new Thread(s1);
         t1.start();
-        Thread t2 = new Thread(s2);
-        t2.start();
+        //Thread t2 = new Thread(s2);
+        //t2.start();
            
         try {
             t1.join();
-            t2.join();
+          //  t2.join();
         } catch (InterruptedException ex) {
         }
         
