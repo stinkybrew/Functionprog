@@ -63,12 +63,12 @@ Funktio luo periaatteessa äärrettömän määrän näitä lukuja, mutta käyt�
   "Generates lazy sequence of triangular numbers"
   ([] (tri* 0 1))
   ([sum n]
-     (let [new-sum (+ sum n)](def)
+     (let [new-sum (+ sum n)]
        (cons new-sum (lazy-seq (tri* new-sum (inc n)))))))
 ```
 * Ohjelmassa on määritelty:
 ```
-(def tri (tri*)
+(def tri (tri*))
 ```
 
 * Tutki, mitä seuraavat tekevät ja miksi:
