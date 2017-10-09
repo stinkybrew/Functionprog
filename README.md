@@ -1,3 +1,3 @@
-# Funktionaalinen ohjelmointi kevät 2017
+# Funktionaalinen ohjelmointi syksy 2018
 
 Tämä on ensimmäinen versio repositorista.
