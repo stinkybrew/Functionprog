@@ -1,4 +1,5 @@
-# viikko x 01
+# viikko 5
 
-Viikon....
+Viikolla 5 siirrytään opiskelemaan torstaina Clojurea. Perjantaina on vielä Javaa,
+erityisesti funktionaaliseen ohjelmointiin soveltuvia suunnittelumalleja.
 
