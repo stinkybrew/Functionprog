@@ -1,53 +1,65 @@
-# viikko 5 02
+# viikko 7 01
 
-Viikon 5 perjantain tehtävät.
+Viikon 7 torstain materiaalia.
 
-# Suunnittelumalleja funktionaalisesti
-
-
-1. Määrittele Abstrakti tehdas (Abstract Factory) Meijeri, josta saadaan kolmenlaisia tuotteita: maitoa, juustoa, jugurttia.
-Toteuta kaksi erilaista konkreettista tehdasta: laktoositon ja vähälaktoosinen.
-Kirjoita testiohjelma, jossa käytät joko laktoosittomia tai vähälaktoosisia tuotteita.
-Tehdas voidaan vaihtaa muuttamatta soivelluskoodia muulla tavalla kuin tehtaan vaihdolla.
-
-* Tuotteille pitää määritellä omat rajapinnat: interface Maito jne.
-* Katso mallia gitistä v5/02/AbstractFactory.
+# Clojuren kontrollirakenteet
 
 
-2. Määrittele vastuuketju (Chain of Responsibility), jossa käsitellään merkkijonona välitettävä dokumentti.
-Ensimmäinen käsittelijä poistaa dokumentista kaikki ylimääräiset välilyönnit. Toinen korvaa skandit seuraavasti: ä,å -> a; ö -> o; Ä,Å -> A; Ö -> O. 
-Kolmas tarkistaa oikeinkirjoituksen: kaikki sturct-sanat korvataan struct-sanoilla.
-* Katso mallia gitistä v5/02/ChainOfResponsibility.
 
-3. Edellisessä tehtävässä tehdyt toiminnallisuudet voidaan nähdä merkkijonon käsittelyyn liittyvinä erilaisina editointistrategioina. 
-Tarkastele asiaa tästä näkökulmasta ja toteuta merkkijonon käsittely Strategy-mallin mukaisesti. 
-* Katso mallia gitistä v5/02/Strategy.
 
-4. Uutistoimisto tuottaa uutisia, joita se välittää eri medioille (Helsingin Sanomat, Ilta-Sanomat jne.) Kirjoita ja testaa Observer-mallin mukainen ratkaisu, 
-jossa Helsingin Sanomat välittää lukijoilleen (tulostaa ruudulle) kaikki uutiset, joista löytyy avainsana "politiikka" ja Ilta-Sanomat jokaisen, josta löytyy avainsana "julkkis".
-* Katso mallia gitistä v5/02/Observer.
+1. Arvo lottorivi. Arvo luvut valitsemaasi tietorakenteeseen ja tulosta ne. Käytä Clojuren silmukkarakenteita
+esim. loop, doseq tms.
 
-5. Vuoropohjaisen pelin (shakki, pokeri jne. ) logiikka voidaan esittää seuraavalla algoritmilla (= Template Method):
+2. Kahden luvun suurin yhteinen tekijä on suurin luku, jolla molemmat luvut ovat jaollisia.  Esimerkiksi lukujen 102 ja  68 suurin tekijä on 34.
 
 ```
- abstract class Game {
- 
-    protected int playersCount;
-    abstract void initializeGame();
-    abstract void makePlay(int player);
-    abstract boolean endOfGame();
-    abstract void printWinner();
+syt(p, q) {
+  Jos q on 0, palauta p.
+  Muuten 
+    selvitä rekursiivisella metodikutsulla, mikä on suurin yhteinen tekijä q:lle ja p%q:lle,
+	ja
+    palauta sama luku, jonka rekursiivinen kutsukin palautti.
+}
+```
+Toteuta tämä funktio recur:in avulla.
 
-    public final void playOneGame(int playersCount) {
-        this.playersCount = playersCount;
-        initializeGame();
-        int j = 0;
-        while (!endOfGame()){
-            makePlay(j);
-            j = (j + 1) % playersCount;
-        }
-        printWinner();
+
+3. Hakemistossa on kalevala.txt-niminen tiedosto, jossa on Kalevalan alusta pieni pätkä. Käytä slurpia tiedoston lukemiseen. Tee samanlainen esiintymälista kuin Javasriptillä/Javalla aiemmin.
+
+Esimerkiksi listasta 
+```
+'This is  a test.  This is only a test.'
+```
+pitää tulla tuloksena
+```
+{“a”:2, ”is”:2,  “only”:1, “test”:2, “this”:2 }
+```
+4. Viikolla 3 käsiteltiin pisteitä ja pisteiden transformaatioita. Esillä oli seuraava Java-kielinen ohjelma.
+
+```
+public class PisteenTransformaatiot {
+          
+    public static void main(String[] args) {
+               
+       Function siirto = Piste.makeSiirto(1, 2);
+       Function skaalaus = Piste.makeSkaalaus(2);
+       Function kierto = Piste.makeKierto(Math.PI);
+       Function muunnos = // muodosta tässä yhdistetty funktio
+       
+       Piste[] pisteet = {new Piste(1,1), new Piste(2,2), new Piste(3,3)};
+       List<Piste> uudetPisteet = new CopyOnWriteArrayList();
+       
+       for (Piste p: pisteet){
+           uudetPisteet.add((Piste)muunnos.apply(p));
+       } 
+  
+       uudetPisteet.forEach(p -> System.out.println(p));
     }
+}
 ```
-* Pystytkö esittämään tälle funktionaalisen version ja jonkin pelin toteutuksen? 
-* Katso mallia gitistä v5/02/TemplateMethod.
+Mieti millaista tietorakennetta käyttäisit Clojuressa. Toteuta funktiot siirto, skaalaus ja kierto. Toteuta 
+vastaavanlainen toiminnallisuus Clojuressa: Käyt läpi pisteitä sisältävää tietorakennetta ja kohdistat jokaiseen pisteeseen kaikki funktiot.
+
+
+
+
