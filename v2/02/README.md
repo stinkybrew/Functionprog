@@ -1,6 +1,5 @@
 # viikko 2 02
 
-Viikon 2 perjantain tehtävät.
 
 # Funktioita ja tietorakenteita
 
