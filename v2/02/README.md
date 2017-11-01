@@ -5,7 +5,7 @@
 
 Erilaisia funktionaalisen ohjelmoinnin kulmakiviä..
 
-
+Ota tehtäviä varten käyttöön immutable.js: npm install immutable 
 
 1. Mäkihypyn pistelasku. Hyppääjä saa K-pisteelle kantaneesta hypystä 60 pistettä. Normaalimäen K-piste on 75–99 metrissä ja suurmäen 100-130 metrissä.
 Mäet ovat erilaisia:  Jokainen lisämetri tuo normaalimäessä 2,0 pistettä ja suurmäessä 1,8 pistettä lisää. K-pisteen alle jäämisestä vähennetään pisteitä samalla tavalla.<br/><br/>
