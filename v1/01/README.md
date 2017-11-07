@@ -1,6 +1,5 @@
 # viikko 1 01
 
-Viikon 1 torstain materiaalia.
 
 # Funktionaalinen ohjelmointi
 

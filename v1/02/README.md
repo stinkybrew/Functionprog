@@ -1,6 +1,5 @@
 # viikko 1 02
 
-Viikon 1 perjantai
 
 # Funktiot funktionaalisen ohjelmoinnin peruspilareina 
 
