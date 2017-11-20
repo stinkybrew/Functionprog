@@ -14,7 +14,7 @@ public class Main {
      */
     public static void main(String[] args) {
        
-        AbstractShapeFactory factory = new ShapeFactory();
+        AbstractShapeFactory factory = new ShapeFactory3D();
         
         Shape shape1 = factory.getShape("circle");
         Shape shape2 = factory.getShape("rectangle");
