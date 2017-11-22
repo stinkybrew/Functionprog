@@ -6,7 +6,7 @@
 
 1. Kirjoita ohjelma (funktio), joka kysyy sinulta yhden luvun (> 0) ja kertoo, onko luku parillinen. Jos luku on <= 0, ohjelma tulostaa virheilmoituksen. Merkkijonosyötteen (read-line) voi muuttaa kokonaisluvuksi operaattorilla <b>Integer.</b>, esim. (Integer. "2")
 
-2. Lisää edelliseen funktioon toisto recur-operaattorilla: jos annettu luku on virheellinen, sitä pyydetäänn uudestaan (funktio kutsuu tässä tapauksessa itseään). 
+2. Lisää edelliseen funktioon toisto recur-operaattorilla: jos annettu luku on virheellinen, sitä pyydetään uudestaan (funktio kutsuu tässä tapauksessa itseään). 
 
 3. Kirjoita funktio, joka tulostaa silmukassa kolmella jaolliset luvut väliltä 1 - yläraja, kun yläraja annetaan funktiolle parametrina.
 
