@@ -82,7 +82,7 @@ sima-ainekset-ordered ;=> #{:hiiva :sitruuna :sokeri :vesi}
  
  
 
-(def maki (fn[k lisa x] (+ (* (+ x (* -1 k)) lisa ) 60))) 
+(def maki (fn[k-piste lisapisteet pituus] (+ (* (- pituus k-piste)) lisapisteet ) 60))) 
 (maki 90 1.8 100) ;=> 78.0
 
 (def lahti90 (partial maki 90 1.8))

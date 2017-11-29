@@ -35,20 +35,7 @@
         )
         merkkijonovektoreista) ; mapin 2. arg (luettu tiedostosta)
 )
-
-"Esimerkki:"
-(map vector aineet ["Vesi" "litraa" "10"])
-;=> ([:aines "Vesi"] [:yksikko "litraa"] [:maara "10"])
-
-
-(update {:aines "Vesi", :yksikko "litraa", :maara 4} :maara #(* % 2))
-
-
-(defn kertaaX
-  [luku kerroin]
-  (* luku kerroin))
-
-(update {:aines "Vesi", :yksikko "litraa", :maara 4} :maara kertaaX 3)   
+  
 
              
 (tee-mappeja (parse (slurp file)))
