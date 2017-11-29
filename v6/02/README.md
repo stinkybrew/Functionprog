@@ -1,6 +1,5 @@
 # viikko 6 02
 
-Viikon 6 perjantain tehtävät.
 
 # Clojuren tietorakenteita ja keskeisiä funktioita (apply ja partial)
 
