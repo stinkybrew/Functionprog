@@ -1,6 +1,5 @@
-# viikko 7 02
+# viikko 7/01 
 
-Viikon 7 perjantain materiaalia.
 
 # Pegthing-pelin toteutuksen syvin olemus
 
