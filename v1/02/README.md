@@ -47,8 +47,8 @@ Kulma ilmoitetaan radiaaneina. Esim. 180 astetta on Math.PI.
 4. <b>Häntärekursio</b>: Edellisessä tehtäväsarjassa toteutit potensiin korotuksen rekursiivisena funktiona. Jos ratkaisusi ei ollut häntärekursiivinen, niin muuta se sellaiseksi.
  
 
-5. <b>Sulkeuma</b>: Tutki seuraavaa ohjelmaa (repossa <code> v1/02/sulkeuma_teht2_5.js</code>). Selvitä, mitä siinä tehdään ja miksi se tulostaa sitä, mitä tulostaa. Muuta funktion koodi sellaiseksi, että sillä ei ole sivuvaikutuksia: 
-toteuta IIFE, joka palauttaa kaksi funktiota, joita voidaan kutsua tyyliin Moduuli.kasvata() ja Moduuli.vahenna(), kun IIFE:n kutsu on muotoa:  var Moduuli = (function(){...})();
+5. <b>Sulkeuma</b>: Tutki seuraavaa ohjelmaa (repossa <code> v1/02/sulkeuma_teht2_5.js</code>). Selvitä, mitä siinä tehdään ja miksi se tulostaa sitä, mitä tulostaa. Muuta foo-funktion koodi sellaiseksi, että sillä ei ole sivuvaikutuksia: 
+toteuta IIFE, joka palauttaa objektiliteraalin, jossa on kaksi funktiota ja joita voidaan kutsua tyyliin Moduuli.kasvata() ja Moduuli.vahenna(), kun IIFE:n kutsu on muotoa:  var Moduuli = (function(){...})();
 
     ```
         'use strict';
