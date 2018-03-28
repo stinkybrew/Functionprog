@@ -24,15 +24,19 @@ let pisteet = normaaliLahti(98);
 
 * Vinkki: toteuta kaksiparametrinen funktio, joka saa parametreinaan mäen K-pisteen ja lisäpistemäärän (1,8 tai 2,0) ja joka palauttaa edelläkuvatunlaisen yksiparametrisen funktion.
 
-2. Määrittele Auto-luokka, jolla on parametriton konstruktori ja kaksi ominaisuutta tankki ja matkamittari. Tankki sisältää polttoaineen määrän ja matkamittari ajetut kilometrit. 
-Suojaa matkamittari siten (WeakMap), että lukemaa ei pääse muuttamaan luokan ulkopuolelta käsin. 
+2. Määrittele Auto-luokka, jolla on kaksi ominaisuutta, tankki ja matkamittari, ja parametrillinen konstruktori näiden alkuarvojen asettamiseksi. Tankki sisältää polttoaineen määrän ja matkamittari ajetut kilometrit. 
+Suojaa matkamittari siten (WeakMap), että lukemaa ei pääse muuttamaan luokan ulkopuolelta käsin. Jätä tankki suojaamatta.
 Matkamittarin lukema muuttuu eli kasvaa, kun autolla ajetaan (metodi aja(), joka vähentää myös polttoainen määrää).  
 Kirjoita getterit matkamittarin lukeman ja polttoaineen määrän selvittämiseksi.  
-Kirjota myös metodi polttoaineen lisäystä varten.  
+Kirjota myös metodi polttoaineen lisäystä varten, mutta esitä myös, kuinka voit käsitellä suoraan tankki-muuttujaa.
 
 * Katso ideoita gitissä olevasta ohjelmasta v2/02/ominaisuuden_suojaus.js.
 
-3. Määrittele seuraava joukko:
+
+3. Tee edellisestä Auto-luokasta immutable value object -variaatio: Kerran luotua auto-oliota ei voi  muuttaa.
+
+
+4. Määrittele seuraava joukko:
 
 ```
 const set1 = Immutable.Set(['punainen', 'vihreä', 'keltainen']);
@@ -40,18 +44,5 @@ const set1 = Immutable.Set(['punainen', 'vihreä', 'keltainen']);
 
 * Lisää joukkoon set1 'ruskea' tyyliin set2 = set1 & 'ruskea'. Mitä on (set1 === set2)? Lisää 'ruskea' uudestaan joukkoon set2 ja tuota uusi joukko set3. Mitä toteat, kun teet ==== -vertailun set2 ja set3:lle?
 
-4. Toteuta jokin ohjelma, jolla voit havainnollistaa "lazy evaluation" -toteutustapaa.
+5. Toteuta jokin ohjelma, jolla voit havainnollistaa "lazy evaluation" -toteutustapaa.
 
-5. Selvitä, mitä tekee Immutable.Repeat() ja esitä sille jokin toinen käyttöesimerkki alla olevan lisäksi.
-
-```
-const Immutable = require('immutable');
-
-var firstTenElements = Immutable.Repeat()
-                                .map( Math.random )
-                                .take( 10 )
-                                .toJSON();
-
-console.log(firstTenElements); 
-
-```
