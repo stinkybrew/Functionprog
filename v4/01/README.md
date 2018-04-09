@@ -23,7 +23,9 @@ public class StreamFilterMapReduce {
 }
 ```
 a) Kuinka monta kertaa filter-operaatio kutsuu lambdalauseketta?
+
 b) Kuinka monta kertaa map-operaatio kutsuu lambdalauseketta?
+
 c) Jos filter- ja map-operaatioiden järjestys vaihdetaan, kuinka monta kertaa map-operaatio kutsuu lambdalauseketta?
 
 
