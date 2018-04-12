@@ -7,9 +7,9 @@ Näistä annetaan vain osa tehtäviksi (ks. tehtäväksianto työtilasta)
 1. a) Kirjoita oma Collector-rajapinnan toteuttaja, joka toimii kuten Collector.joining()-tehdasmetodin palauttama Collector-toteutus.
 Tuota koodaamasi kollektorin avulla merkkijono ArrayList-tietorakenteen sisältämistä Omena-olioista. 
 Kirjoita myös oma joining()-metodia vastaava staattinen tehdasmetodi omaan OmatKollektorit-luokkaan ja käytä sitä.
-* Vinkki: käytä StringBufferia Supplierin paluuarvona.
+* Vinkki: käytä StringBufferia/StringBuilderia Supplierin paluuarvona.
 <br><br>
-b) Pystyykö edellisen toteuttamaan yhdellä usean säikeen yhteisellä StringBufferilla, jos hyödynnetään rinnakkaisuutta?
+b) Pystyykö edellisen toteuttamaan yhdellä usean säikeen yhteisellä StringBufferilla/StringBuilderilla, jos hyödynnetään rinnakkaisuutta?
 Testaa sopivalla, riittävän isolla aineistolla.
 * Testaa siis CONCURRENT -optimoinnin käyttö. Järjestyksellä ei ole väliä tuloslistaa muodostettaessa.
 
