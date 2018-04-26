@@ -16,7 +16,26 @@ a) Esitä, kuinka tuotat apply-funktiota käyttäen seq:n, jossa on kunkin osave
 
 b) Esitä vielä, kuinka saat seq:n muutetuksi vektoriksi, joka sisältää alkioinaan nämä luvut, käyttäen pelkästään apply- ja vector-funktioita.
 
-3. Gitissä on simaresepti (sima.csv) ja koodia reseptin muuttamiseksi peräkkäisiksi map-rakenteiksi (ks. tuntimateriaali).
+3. Täydennä seuraava funktio toimivaksi. 
+```
+(defn lisaa-vampyyrikantaan 
+    [db mbp hp nimi]
+    ;; 
+    )
+```
+Funktiolla on tarkoitus lisätä vampyyrikantaan uusi jäsen. 
+Vampyyrikantana on luentomateriaalissa esitetty vampire-database.
+
+- db on kannan nimi
+- mbd-boolean-arvo on :make-blood-puns?-avainta vastaava arvo
+- hp-boolean-arvo on :has-pulse? avainta vastaava arvo
+- nimi on :name-avainta vastaava arvo
+
+Pääaivaimeksi on tultava yhtä suurempi koknaislukuarvo, kuin mikä on tällä hetkellä suurin kannassa oleva avainarvo. 
+
+4. Kirjoita funktio, jolla poistat vampyyrikannasta annetun pääavaimen mukaisen tiedon.
+
+5. Gitissä on simaresepti (sima.csv) ja koodia reseptin muuttamiseksi peräkkäisiksi map-rakenteiksi (ks. tuntimateriaali).
 Tee funktio, jonka avulla voidaan tuottaa simareseptin monikertoja, esim kaksinkertainen, kolminkertainen jne. annos.
 Simaresepti on lähtötilanteessa map-rakenteina:
 ```
