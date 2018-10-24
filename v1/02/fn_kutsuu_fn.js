@@ -8,8 +8,8 @@ function anteeksipyynto(nimi){
   		return 'Anteeksi, '+ nimi;
 }
 
-function annaFraasi(fraasi,nimi) {
- 		return fraasi(nimi);
+function annaFraasi(fraasi,nimi) { 
+ 		return fraasi(nimi); // paluuarvona fraasi-funktion kutsun tulos
 }
 
 console.log(annaFraasi(tervehdysteksti, 'Masa')); 
