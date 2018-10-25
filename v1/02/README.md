@@ -22,8 +22,8 @@ Vie koodisi myös omaan git-repoosi, jonne olet antanut opettajille oikeudet (si
     Paluuarvo  0: luvut ovat yhtä suuria.
     
 
-2. <b>Funktio parametrina</b>: Kirjoita funktio, jolle annetaan parametrina edellisen tehtävän funktion kutsu (käytännössä funktiolle välitetään anonyymi funktio) ja kaksi taulukkoa, jossa toisessa on Helsingin kuukausittaiset keskilämpötilat vuodelta 2015 ja toisessa vuodelta 2016.
-Funktio käyttää parametrina saamaansa funktiota ja palauttaa tiedon siitä, kuinka monessa tapauksessa vuoden 2016 keskilämötila oli korkeampi.
+2. <b>Funktio parametrina</b>: Kirjoita funktio, jolle annetaan parametrina edellisen tehtävän funktion kutsu (käytännössä funktiolle välitetään anonyymi funktio) ja kaksi taulukkoa, jossa toisessa on Helsingin kuukausittaiset keskilämpötilat vuodelta 2015 ja toisessa vuodelta 2016 (voit keksiä lämpötilat itse).
+Funktio käyttää parametrina saamaansa funktiota ja palauttaa tiedon siitä, kuinka monessa tapauksessa vuoden 2016 keskilämpötila oli korkeampi.
 
 
 3. <b>Funktioita taulukossa</b>: Versionhallinnassa on <code>v1/02/fns_in_array.js</code> -skripti. Siinä suoritetaan 2D-transformaatioita tason pisteelle (siirtymä ja zoomaus). 
@@ -47,7 +47,7 @@ Kulma ilmoitetaan radiaaneina. Esim. 180 astetta on Math.PI.
 4. <b>Häntärekursio</b>: Edellisessä tehtäväsarjassa toteutit potensiin korotuksen rekursiivisena funktiona. Jos ratkaisusi ei ollut häntärekursiivinen, niin muuta se sellaiseksi.
  
 
-5. <b>Sulkeuma</b>: Tutki seuraavaa ohjelmaa (repossa <code> v1/02/sulkeuma_teht2_5.js</code>). Selvitä, mitä siinä tehdään ja miksi se tulostaa sitä, mitä tulostaa. Muuta foo-funktion koodi sellaiseksi, että sillä ei ole sivuvaikutuksia: 
+5. <b>Sulkeuma</b>: Tutki seuraavaa ohjelmaa (repossa <code> v1/02/sulkeuma_teht2_5.js</code>). Selvitä, mitä siinä tehdään ja miksi se tulostaa sitä, mitä tulostaa. Muuta foo-funktion koodi sellaiseksi, että se ei mahdollista objektin muuttamista: 
 toteuta IIFE, joka palauttaa objektiliteraalin, jossa on kaksi funktiota ja joita voidaan kutsua tyyliin Moduuli.kasvata() ja Moduuli.vahenna(), kun IIFE:n kutsu on muotoa:  var Moduuli = (function(){...})();
 
     ```
