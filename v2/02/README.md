@@ -24,6 +24,11 @@ let pisteet = normaaliLahti(98);
 
 * Vinkki: toteuta kaksiparametrinen funktio, joka saa parametreinaan mäen K-pisteen ja lisäpistemäärän (1,8 tai 2,0) ja joka palauttaa edelläkuvatunlaisen yksiparametrisen funktion.
 
+* Kirjoita lopuksi testiohjelma, jossa lasket taulukossa olevien pituuksien tuottamat pisteet esim. Lahden normaalimäessä hypätyille hypyille. Käytä map-funktiota.
+
+
+
+
 2. Määrittele Auto-luokka, jolla on kaksi ominaisuutta, tankki ja matkamittari, ja parametrillinen konstruktori näiden alkuarvojen asettamiseksi. Tankki sisältää polttoaineen määrän ja matkamittari ajetut kilometrit. 
 Suojaa matkamittari siten (WeakMap), että lukemaa ei pääse muuttamaan luokan ulkopuolelta käsin. Jätä tankki suojaamatta.
 Matkamittarin lukema muuttuu eli kasvaa, kun autolla ajetaan (metodi aja(), joka vähentää myös polttoainen määrää).  
