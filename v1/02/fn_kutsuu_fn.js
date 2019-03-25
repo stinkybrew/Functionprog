@@ -15,4 +15,5 @@ function annaFraasi(fraasi,nimi) {
 console.log(annaFraasi(tervehdysteksti, 'Masa')); 
 console.log(annaFraasi(anteeksipyynto, 'Aku')); 
 
-// Jos fraasi, esim. tervehdys, muuttuu, muutetaan vain yhteen paikkaan. Kutsut eivät muutu.
+// Jos fraasi, esim. tervehdys, muuttuu,
+// muutetaan vain yhteen paikkaan. Kutsut eivät muutu.
